@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostSite.com - Portfolio Web</title>
+
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; background:#f0f0f0; color:#111; }
+        header { background:#0077b6; color:white; padding:40px 20px; text-align:center; }
+        header h1 { margin:0; font-size:2.5em; }
+        header p { font-size:1.2em; }
+        nav { background:#0096c7; padding:15px; text-align:center; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+        section { padding:60px 20px; max-width:1000px; margin:auto; }
+        .portfolio { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+        .project { background:white; padding:20px; border-radius:10px; width:300px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .project img { width:100%; border-radius:10px; }
+        button.contact-btn { background:#00b4d8; border:none; padding:15px 25px; border-radius:8px; color:white; font-weight:bold; cursor:pointer; margin-top:10px; }
+        button.contact-btn:hover { background:#0077b6; }
+        footer { background:#0077b6; color:white; text-align:center; padding:20px; }
+        @media(max-width:600px) { .portfolio { flex-direction:column; align-items:center; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BoostSite.com</h1>
+    <p>Créateur de sites web pour commerces et entreprises</p>
+</header>
+
+<nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="portfolio">
+    <h2>Mes Réalisations</h2>
+    <div class="portfolio">
+        <div class="project">
+            <img src="https://via.placeholder.com/300x200?text=Poissonnerie" alt="Poissonnerie">
+            <h3>Poissonnerie Océan Frais</h3>
+            <p>Site vitrine + commandes WhatsApp</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/300x200?text=Restaurant" alt="Restaurant">
+            <h3>Restaurant Local</h3>
+            <p>Design moderne + réservation en ligne</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Mes Services</h2>
+    <ul>
+        <li>Création de site vitrine</li>
+        <li>Amélioration de site existant</li>
+        <li>Design responsive & mobile friendly</li>
+        <li>Maintenance et mise à jour optionnelle</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contactez-moi</h2>
+    <p>Pour discuter de votre projet :</p>
+    <button class="contact-btn" onclick="window.location.href='https://wa.me/33604156820'">WhatsApp</button>
+    <p>ou envoyez un email : bronnecgurvan9@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Gurvan Bronnec – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
